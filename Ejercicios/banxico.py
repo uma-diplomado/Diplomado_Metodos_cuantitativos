@@ -14,11 +14,11 @@ from bs4 import BeautifulSoup
 def comma_to_float(x):
     return float(x.replace(',', ''))
 
-proxy = 'http://MB50294:febr2020@150.216.245.17:80'
-os.environ['http_proxy'] = proxy
-os.environ['HTTP_PROXY'] = proxy
-os.environ['https_proxy'] = proxy
-os.environ['HTTPS_PROXY'] = proxy
+#proxy = 'http://USER:PASSWORD@PROXY_SERVER'
+#os.environ['http_proxy'] = proxy
+#os.environ['HTTP_PROXY'] = proxy
+#os.environ['https_proxy'] = proxy
+#os.environ['HTTPS_PROXY'] = proxy
 
 req = requests.get('http://www.anterior.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?sector=7&accion=consultarCuadro&idCuadro=CF478&locale=es#')
 soup = BeautifulSoup(req.text, "lxml")
