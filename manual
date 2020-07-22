@@ -1,0 +1,17 @@
+Pasos para Montar entorno de desarrollo: 
+1.- Descargar e instalar Git y Anacondadesde los siguientes links:
+	https://github.com/git-for-windows/git/releases/download/v2.27.0.windows.1/Git-2.27.0-64-bit.exe
+	https://repo.anaconda.com/archive/Anaconda3-2020.02-Windows-x86_64.exe
+2.- desde línea de comando escribir los siguiente comandos:
+	git clone https://github.com/uma-diplomado/Diplomado_Metodos_cuantitativos.git
+	cd Diplomado_Metodos_cuantitativos
+	C:\ProgramData\Anaconda3\condabin\activate.bat OJO, la ruta depende de donde instalaron Anaconda, no olviden la ruta
+	conda create -name DIPLOMADO_UMA
+	conda activate DIPLOMADO_UMA
+	conda install pip
+	pip install -r requirements.txt
+	
+3.- Para abrir el entorno si lo cierran después de instalarlo ejecutan lo siguiente:
+	C:\ProgramData\Anaconda3\condabin\activate.bat OJO, la ruta depende de donde instalaron Anaconda, no olviden la ruta
+	conda activate DIPLOMADO_UMA
+	jupyter notebook
